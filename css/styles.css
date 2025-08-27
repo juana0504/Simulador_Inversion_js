@@ -25,7 +25,7 @@ h1{
     color: #261B2C;
     text-align: center;
     padding-bottom: 50px;
-    border-bottom: 2px solid #7a93ab;
+    border-bottom: 2px solid #261B2C;
 }
 
 .cont-flex{
@@ -40,7 +40,7 @@ h1{
 }
 
 h2{
-    color: #202d37;
+    color: #261B2C;
     font-weight: 700;
     font-size: 28px;
     margin-bottom: 14px;
