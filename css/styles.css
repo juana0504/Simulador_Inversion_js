@@ -22,7 +22,7 @@
 h1{
     font-size: 34px;
     font-weight: 700;
-    color: #1c9882;
+    color: #261B2C;
     text-align: center;
     padding-bottom: 50px;
     border-bottom: 2px solid #7a93ab;
@@ -92,24 +92,24 @@ form button{
     display: block;
     width: 97%;
     padding: 14px 80px;
-    background: #1c9882;
+    background: #261B2C;
     color: #fff;
-    border: 1px solid #1c9882;
+    border: 1px solid #261B2C;
     transition: .4s;
     cursor: pointer;
 }
 
 form button:hover{
-    background: #f5f8fa;
-    border: 1px solid #1c9882;
-    color: #1c9882;
+    background: #9d1dc4;
+    border: 1px solid #261B2C;
+    color: #000000;
 }
 
 input, select{
     padding: 14px 30px;
-    background: #f5f8fa;
+    background: #f9f5fa;
     border: 0;
-    border-bottom: 2px solid #7a93ab;
+    border-bottom: 2px solid #9e72ac;
     outline: none;
 }
 input::placeholder {
