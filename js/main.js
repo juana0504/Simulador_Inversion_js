@@ -25,36 +25,40 @@ function simulador() {
     let ganancia;
     let total;
 
-    switch (Ctiempo) {
-        case '1':
-            //En este case realizaremos el calculo si el tiempo corresponde a un año
-            ganancia = (Cmonto*0.008)*12;
-            total = parseInt(Cmonto) + parseInt(ganancia);
-            Sinteres.textContent='0.8%';
-            Stiempom.textContent='12 Meses';
-            break;
-        case '2':
-            //En este case realizaremos el calculo si el tiempo correponde a dos años 
-            ganancia = (Cmonto*0.013)*24;
-            total  = parseInt(Cmonto) + parseInt(ganancia);
-            Sinteres.textContent='1.3%';
-            Stiempom.textContent='24 Meses';
-            break;
-        case '3':
-            //En este case realizaremos el calculo si el tiempo correponde a tres años 
-            ganancia = (Cmonto*0.017)*36;
-            total = parseInt(Cmonto) + parseInt(ganancia);
-            Sinteres.textContent='1.7%';
-            Stiempom.textContent='36 Meses';
-            break;
-        default:
-            break;
+    if (Cnombres ==="" || Ctelefono ==="" || Cemail ==="" || Cmonto ==="" || Ctiempo ==="") {
+        alert("Complete todos los datos");
     }
-
-    Stotal.textContent = total;
-    Sganancia.textContent = ganancia;
-    Snombre.textContent=Cnombres;
-    Semail.textContent=Cemail;
+    else{
+        switch (Ctiempo) {
+            case '1':
+                //En este case realizaremos el calculo si el tiempo corresponde a un año
+                ganancia = (Cmonto*0.008)*12;
+                total = parseInt(Cmonto) + parseInt(ganancia);
+                Sinteres.textContent='0.8%';
+                Stiempom.textContent='12 Meses';
+                break;
+            case '2':
+                //En este case realizaremos el calculo si el tiempo correponde a dos años 
+                ganancia = (Cmonto*0.013)*24;
+                total  = parseInt(Cmonto) + parseInt(ganancia);
+                Sinteres.textContent='1.3%';
+                Stiempom.textContent='24 Meses';
+                break;
+            case '3':
+                //En este case realizaremos el calculo si el tiempo correponde a tres años 
+                ganancia = (Cmonto*0.017)*36;
+                total = parseInt(Cmonto) + parseInt(ganancia);
+                Sinteres.textContent='1.7%';
+                Stiempom.textContent='36 Meses';
+                break;
+            default:
+                break;
+        }
+        Stotal.textContent = total;
+        Sganancia.textContent = ganancia;
+        Snombre.textContent=Cnombres;
+        Semail.textContent=Cemail;
+    }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
